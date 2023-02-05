@@ -1,0 +1,76 @@
+
+ a print statement is 
+ console.log()
+
+ but how do you run the code? 
+ python is built on
+
+Java 
+a much older language
+
+javascript
+kind of wanted to hop on the old popularity of java
+they are very different
+
+Script src = javascript source 
+
+code usually runs top to bottom 
+
+compile = putt everything together
+JS is a compiled language
+compiled languahe doesnt care about how its written
+you dont need to worry about indentation, but it is impotant to use a semilcolon to show the end of the code
+
+
+
+lists in JS = arrays 
+
+dictionaries in JS = JS Object (JSON) 
+Javascript Standard Notation
+{ "" : [] }
+
+
+
+JS HOISTING- brings something to the top
+    console.log(random)
+    random is not defined but still printed 
+    the problem is that JS only tells you 'undefined' and isn't really a proper error message telling  you what went wrong
+
+
+instead of using VAR, use LETT and CONST
+    LET and CONST do not hoist
+    cannot be Redeclared
+    must be Declared before use.
+    CONST value cannot be reassigned. use it until you have to use LET 
+    have Block Scope.
+
+    LET and CONST are both used as variable declarations 
+    it is the newer ES6 Syntax
+        Legacy code 
+        Tech Debt 
+            a lot of companies are working off of dev code from years ago, and might not be using up to date practices 
+
+    
+
+
+Get used to checking the functions / venacular / concatenations 
+
+
+
+
+FUNCTIONS 
+//regularly named function
+
+function nameOfFunction(param1, param2){
+    //code goes here
+    
+    return
+};
+     long as its in the two curly braces you are part of the function, regardless of indentation  
+
+
+arrow function is the new 3S6 syntax way of creating functions 
+format: 
+     () => {}
+     ( params go here ) => { this is the code block }
+     const cubeMe = () => {};
