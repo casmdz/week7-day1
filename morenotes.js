@@ -195,31 +195,22 @@ let givenArr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 // function replaceEvens(){
 //     // i = givenArr.length;
 //     for (let i = 0; i <givenArr.length; i++){
-//         if (i % 2 !== 0) {
+//         if (i % 2 == 0) {
 //             givenArr[i] = 'even index';
 //         }
 //     }
 //     return givenArr;
-//     // console.log(givenArr)
 // };
+// console.log(replaceEvens(givenArr));
 
-let replaceEvens = (givenArr) =>{
+
+const replaceEvens = (givenArr) =>{
     let i = 0;
     while (i < givenArr.length ){
-        if (i % 2 !== 0){
-            givenArr.splice(i, 1, 'even index');
-        }
+        givenArr.splice(i, 1, 'even index');
+        i += 2;
     }
     return givenArr
 }
 
 console.log(replaceEvens(givenArr));
-
-// //let replaceEvens = (givenArr) => {
-//     let i = 0;
-//     while (i < givenArr.length) {
-//       givenArr.splice(i, 1, "even index");
-//       i += 2;
-//     }
-//     return givenArr;
-//   };

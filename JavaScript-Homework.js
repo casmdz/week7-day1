@@ -36,11 +36,18 @@ findWords();
 /*Write a fucntion that takes in an array and removes every even index with a splice,
 and replaces it with the string "even index" */
 
-// Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
+let givenArr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 
-// function replaceEvens(arr){
-//     //code goes here
-// }
+const replaceEvens = (givenArr) =>{
+    let i = 0;
+    while (i < givenArr.length ){
+        givenArr.splice(i, 1, 'even index');
+        i += 2;
+    }
+    return givenArr
+}
+
+console.log(replaceEvens(givenArr));
 
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
